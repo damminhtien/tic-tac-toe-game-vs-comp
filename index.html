@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tic_Tac_Toe_Game </title>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <body>
+        <div class="text-center">
+            <h1>TIC TAC TOE</h1>
+            <h3>Enjoy the game!</h3>
+        </div>
+        <div id="selectmode" class="text-center">
+            <h2>Select mode, bro</h2></br>
+            </br>
+            </br>
+            <p>
+                <span id="selectX" onclick="selectX()">X</span>
+                <span id="selectO" onclick="selectO()">O</span>
+            </p>
+        </div>
+        <div>
+            <p class="text-center" id="XorO"></p>
+        </div>
+        <p id="draw" class="text-center" onclick="draw()">Draw, try again :) </p>
+        <p id="nextround" class="text-center" onclick="nextround()">Next Round? OK?</p>
+        <div id="Xwin" class="text-center">Player X win!!! Congratulation!!!</div>
+        <div id="Owin" class="text-center">Player O win!!! Congratulation!!!</div>
+        <div id="maingame" class="text-center">
+            <div class="score">
+                <p>
+                    <span id="pointo" class="text-primary">Player O : 0</span>
+                    <span id="pointx" class="text-danger">Player X : 0</span>
+                </p>
+            </div>
+            <table>
+                <tr>
+                    <td id="11" onclick="play(this)"></td>
+                    <td id="12" onclick="play(this)"></td>
+                    <td id="13" onclick="play(this)"></td>
+                </tr>
+                <tr>
+                    <td id="21" onclick="play(this)"></td>
+                    <td id="22" onclick="play(this)"></td>
+                    <td id="23" onclick="play(this)"></td>
+                </tr>
+                <tr>
+                    <td id="31" onclick="play(this)"></td>
+                    <td id="32" onclick="play(this)"></td>
+                    <td id="33" onclick="play(this)"></td>
+                </tr>
+            </table>
+            <h4 onclick="replay()">Replay</h4>
+        </div>
+    </body>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
